@@ -1,2 +1,2 @@
 .idea
-rust_aoc/**/target
+Solutions/**/rust/target
