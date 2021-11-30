@@ -40,3 +40,10 @@ My attempt at Advent of Code 2021.
 | [day 24](https://adventofcode.com/2021/day/24) |    [Python :x:](./Solutions/day24/py/main.py)   | [Rust :x:](./Solutions/day24/rust/src/main.rs) |
 | [day 25](https://adventofcode.com/2021/day/25) |    [Python :x:](./Solutions/day25/py/main.py)   | [Rust :x:](./Solutions/day25/rust/src/main.rs) |
 
+
+## Usage
+
+To create a new day run:
+1. ```$ py create_new_day.py```
+2. Enter the day you want to create.
+3. Now dayxx/py/main.py has been created and ```cargo new dayxx/rust``` have been run in the Solutions directory.
