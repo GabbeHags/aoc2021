@@ -6,7 +6,7 @@ My attempt at Advent of Code 2021.
 * Try to do the Python solution in Rust.
 
 ### Private leaderboard
-* <a href=https://adventofcode.com/2021/leaderboard/private/view/642677>Leaderboard</a>
+* [Leaderboard](https://adventofcode.com/2021/leaderboard/private/view/642677)
 
 ## Days
 * Completed: :heavy_check_mark:
