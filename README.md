@@ -43,7 +43,7 @@ My attempt at Advent of Code 2021.
 
 ## Usage
 
-To create a new day run:
+To create a new day run ([create_new_day.py](./create_new_day.py)):
 1. ```$ py create_new_day.py```
 2. Enter the day you want to create.
 3. Now dayxx/py/main.py has been created and ```cargo new dayxx/rust``` have been run in the Solutions directory.
