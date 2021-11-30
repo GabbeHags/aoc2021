@@ -47,3 +47,8 @@ To create a new day run ([create_new_day.py](./create_new_day.py)):
 1. ```$ py create_new_day.py```
 2. Enter the day you want to create.
 3. Now dayxx/py/main.py has been created and ```cargo new dayxx/rust``` have been run in the Solutions directory.
+
+## Solutions written in
+* Python 3.9.6
+* Rustc 1.56.1
+* Cargo 1.56.0
