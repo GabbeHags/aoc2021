@@ -14,7 +14,6 @@ def create_py_file(path: Path) -> bool:
     py_file_path: Path = py_dir_path / PY_FILE_NAME
     if py_dir_path.exists() is False:
         py_dir_path.mkdir()
-        py_file_path.touch()
         with open(py_file_path, mode="w") as f:
             f.write("""def part_a():
     pass
