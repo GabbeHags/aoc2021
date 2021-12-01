@@ -44,6 +44,32 @@ def create_rust_file(path: Path) -> bool:
         args: list[str] = ["cargo", "new", rust_dir_path]
         process_results = subprocess.run(args)
         if process_results.returncode == 0:
+            rust_main_file_path = rust_dir_path / "src" / "main.rs"
+            with open(rust_main_file_path, mode="w") as f:
+                f.write("""use std::fs;
+
+fn part_a(v: &[i32]) -> i32{
+    -1
+}
+
+fn part_b(v: &Vec<i32>) -> i32{
+    -1
+}
+
+fn main() {
+    let timer = std::time::Instant::now();
+    let input_vec = fs::read_to_string("../input.txt")
+        .unwrap()
+        .lines()
+        .map(|x| x.parse::<i32>().unwrap())
+        .collect::<Vec<_>>();
+    let a = part_a(&input_vec);
+    let b = part_b(&input_vec);
+    let total_time = timer.elapsed();
+    println!("Result part_a: {}", a);
+    println!("Result part_b: {}", b);
+    println!("Time: {} sec", total_time.as_secs_f32());
+}""")
             return True
     return False
 
