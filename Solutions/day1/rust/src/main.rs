@@ -32,9 +32,11 @@ fn part_b(v: &Vec<i32>) -> i32{
 
 fn main() {
     let timer = std::time::Instant::now();
-    let input: String = fs::read_to_string("../input.txt").unwrap();
-    let input_iter = input.split('\n').filter(|x| *x != "");
-    let input_vec = input_iter.map(|x| x.parse::<i32>().unwrap()).collect::<Vec<_>>();
+    let input_vec = fs::read_to_string("../input.txt")
+        .unwrap()
+        .lines()
+        .map(|x| x.parse::<i32>().unwrap())
+        .collect::<Vec<_>>();
     let a = part_a(&input_vec);
     let b = part_b(&input_vec);
     let total_time = timer.elapsed();
