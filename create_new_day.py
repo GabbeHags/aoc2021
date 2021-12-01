@@ -11,9 +11,30 @@ RUST_DIR_NAME: str = "rust"
 
 def create_py_file(path: Path) -> bool:
     py_dir_path: Path = path / PY_DIR_NAME
+    py_file_path: Path = py_dir_path / PY_FILE_NAME
     if py_dir_path.exists() is False:
         py_dir_path.mkdir()
-        (py_dir_path / PY_FILE_NAME).touch()
+        py_file_path.touch()
+        with open(py_file_path, mode="w") as f:
+            f.write("""def part_a():
+    pass
+
+def part_b():
+    pass
+
+def main() -> tuple:
+    with open("../input.txt") as f:
+        pass
+    return part_a(), part_b()
+
+if __name__ == '__main__':
+    import time
+    start_time = time.perf_counter()
+    a, b = main()
+    end_time = time.perf_counter()
+    print(f"Result part_a: {a}")
+    print(f"Result part_b: {b}")
+    print(f"Time: {(end_time - start_time):4f} sec")""")
         return True
     return False
 
