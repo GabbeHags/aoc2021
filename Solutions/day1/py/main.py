@@ -1,28 +1,18 @@
 def part_a(arr) -> int:
     count = 0
-    prev = None
-    for curr in arr:
-        if prev is not None and prev < curr:
+    for prev, curr in zip(arr, arr[1:]):
+        if prev < curr:
             count += 1
-        prev = curr
     return count
 
 
 def part_b(arr) -> int:
-    prev = None
-    count = 0
-    for i in range(len(arr)):
-        arr_slice = arr[i:i + 3]
-        curr = sum(arr_slice)
-        if len(arr_slice) == 3 and prev is not None and prev < curr:
-            count += 1
-        prev = curr
-    return count
+    return part_a([e1 + e2 + e3 for e1, e2, e3 in zip(arr, arr[1:], arr[2:])])
 
 
 def main() -> tuple[int, int]:
     with open("../input.txt") as f:
-        arr = [int(line) for line in f.read().split("\n") if line.isdigit()]
+        arr = [int(line) for line in f]
     return part_a(arr), part_b(arr)
 
 
