@@ -15,7 +15,7 @@ My attempt at Advent of Code 2021.
 |             Advent of Code Links               |               Solutions Python              |               Solutions Rust               |
 |:----------------------------------------------:|:-------------------------------------------:|:------------------------------------------:|
 | [day 1](https://adventofcode.com/2021/day/1)   |    [Python :heavy_check_mark:](./Solutions/day1/py/main.py) `Time: 0.000793 sec`| [Rust :heavy_check_mark:](./Solutions/day1/rust/src/main.rs) `Time: 0.0001488 sec` |
-| [day 2](https://adventofcode.com/2021/day/2)   |    [Python :heavy_check_mark:](./Solutions/day2/py/main.py) `Time: 0.001743 sec`   | [Rust :x:](./Solutions/day2/rust/src/main.rs)  |
+| [day 2](https://adventofcode.com/2021/day/2)   |    [Python :heavy_check_mark:](./Solutions/day2/py/main.py) `Time: 0.000733 sec`   | [Rust :heavy_check_mark:](./Solutions/day2/rust/src/main.rs) `Time: 0.0001821 sec` |
 | [day 3](https://adventofcode.com/2021/day/3)   |    [Python :x:](./Solutions/day3/py/main.py)    | [Rust :x:](./Solutions/day3/rust/src/main.rs)  |
 | [day 4](https://adventofcode.com/2021/day/4)   |    [Python :x:](./Solutions/day4/py/main.py)    | [Rust :x:](./Solutions/day4/rust/src/main.rs)  |
 | [day 5](https://adventofcode.com/2021/day/5)   |    [Python :x:](./Solutions/day5/py/main.py)    | [Rust :x:](./Solutions/day5/rust/src/main.rs)  |
