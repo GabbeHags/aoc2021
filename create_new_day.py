@@ -87,12 +87,10 @@ def main():
 
     if create_py_file(new_day_path) is False:
         print("Creating python file went wrong. exiting")
-        exit(-1)
     if create_rust_file(new_day_path) is False:
         print("Creating rust files went wrong. exiting")
-        exit(-1)
 
-    print("Everything went fine. :)")
+    print("Done")
 
 
 if __name__ == '__main__':
