@@ -3,7 +3,7 @@ My attempt at Advent of Code 2021.
 
 ### My Goals
 * Do the tasks in Python.
-* Try to do the Python solution in Rust.
+* Try to do the task in Rust. (trying to learn rust)
 
 ### Private leaderboard
 * [Leaderboard](https://adventofcode.com/2021/leaderboard/private/view/642677)
