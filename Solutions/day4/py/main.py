@@ -61,6 +61,7 @@ def reset_boards(boards):
                 board[row][col] = (num, False)
     return boards
 
+
 def main() -> tuple:
     bingo_nums: list[int]
     bingo_boards: list[list[list[tuple[int, bool]]]] = []
@@ -84,7 +85,5 @@ if __name__ == '__main__':
     a, b = main()
     end_time = time.perf_counter()
     print(f"Result part_a: {a}")
-    assert 21607, a
     print(f"Result part_b: {b}")
-    assert 19012, b
     print(f"Time: {(end_time - start_time):4f} sec")
