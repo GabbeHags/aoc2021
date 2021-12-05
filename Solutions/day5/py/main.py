@@ -25,25 +25,25 @@ class LineSegment:
         index = 0
         if x_diff == y_diff:
             if x_diff > 0:
-                #  * x_diff == y_diff and diff > 0 -> inc both of the sides and add each step to the result until start.x == end.x and start.y == end.y
+                #  * x_diff == y_diff and diff > 0 -> inc both of the sides and add each step to the result until x1 == x2 and y1 == y2
                 for n in range(diff + 1):
                     result[index] = (self.x1 + n, self.y1 + n)
                     index += 1
             else:
-                #  * x_diff == y_diff and diff < 0 -> dec both of the sides and add each step to the result until start.x == end.x and start.y == end.y
+                #  * x_diff == y_diff and diff < 0 -> dec both of the sides and add each step to the result until x1 == x2 and y1 == y2
                 for n in range(diff + 1):
                     n = -1 * n
                     result[index] = (self.x1 + n, self.y1 + n)
                     index += 1
 
         elif x_diff > y_diff:
-            #  * x_diff >  y_diff -> inc start.x and dec start.y until start.x == end.x and start.y == end.y
+            #  * x_diff >  y_diff -> inc x1 and dec y1 until x1 == x2 and y1 == y2
             for n in range(diff + 1):
                 result[index] = (self.x1 + n, self.y1 + (-1 * n))
                 index += 1
 
         elif x_diff < y_diff:
-            #  * x_diff <  y_diff -> dec start.x and inc start.y until start.x == end.x and start.y == end.y
+            #  * x_diff <  y_diff -> dec x1 and inc y1 until x1 == x2 and y1 == y2
             for n in range(diff + 1):
                 result[index] = (self.x1 + (-1 * n), self.y1 + n)
                 index += 1
