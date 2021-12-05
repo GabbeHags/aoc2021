@@ -18,7 +18,7 @@ My attempt at Advent of Code 2021.
 | [day 2](https://adventofcode.com/2021/day/2)   |    [Python :heavy_check_mark:](./Solutions/day2/py/main.py) `Time: 0.000733 sec`   | [Rust :heavy_check_mark:](./Solutions/day2/rust/src/main.rs) `Time: 0.0001821 sec` |
 | [day 3](https://adventofcode.com/2021/day/3)   |    [Python :heavy_check_mark:](./Solutions/day3/py/main.py) `Time: 0.001374 sec`   | [Rust :heavy_check_mark:](./Solutions/day3/rust/src/main.rs) `Time: 0.0007656 sec` |
 | [day 4](https://adventofcode.com/2021/day/4)   |    [Python :heavy_check_mark:](./Solutions/day4/py/main.py) `Time: 0.078123 sec`   | [Rust :x:](./Solutions/day4/rust/src/main.rs)  |
-| [day 5](https://adventofcode.com/2021/day/5)   |    [Python :x:](./Solutions/day5/py/main.py)    | [Rust :x:](./Solutions/day5/rust/src/main.rs)  |
+| [day 5](https://adventofcode.com/2021/day/5)   |    [Python :heavy_check_mark:](./Solutions/day5/py/main.py) `Time: 0.123850 sec`   | [Rust :x:](./Solutions/day5/rust/src/main.rs)  |
 | [day 6](https://adventofcode.com/2021/day/6)   |    [Python :x:](./Solutions/day6/py/main.py)    | [Rust :x:](./Solutions/day6/rust/src/main.rs)  |
 | [day 7](https://adventofcode.com/2021/day/7)   |    [Python :x:](./Solutions/day7/py/main.py)    | [Rust :x:](./Solutions/day7/rust/src/main.rs)  |
 | [day 8](https://adventofcode.com/2021/day/8)   |    [Python :x:](./Solutions/day8/py/main.py)    | [Rust :x:](./Solutions/day8/rust/src/main.rs)  |
