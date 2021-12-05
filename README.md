@@ -2,7 +2,7 @@
 My attempt at Advent of Code 2021.
 
 ### My Goals
-* Do the tasks in Python.
+* Do the tasks in Python using only the standard library.
 * Try to do the task in Rust. (trying to learn rust)
 
 ### Private leaderboard
