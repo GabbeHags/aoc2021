@@ -22,7 +22,7 @@ My attempt at Advent of Code 2021.
 | [day 6](https://adventofcode.com/2021/day/6)   |    [Python :heavy_check_mark:](./Solutions/day6/py/main.py) `Time: 0.001254 sec`   | [Rust :x:](./Solutions/day6/rust/src/main.rs)  |
 | [day 7](https://adventofcode.com/2021/day/7)   |    [Python :heavy_check_mark:](./Solutions/day7/py/main.py) `Time: 0.537990 sec`   | [Rust :x:](./Solutions/day7/rust/src/main.rs)  |
 | [day 8](https://adventofcode.com/2021/day/8)   |    [Python :heavy_check_mark:](./Solutions/day8/py/main.py) `Time: 0.007963 sec`   | [Rust :x:](./Solutions/day8/rust/src/main.rs)  |
-| [day 9](https://adventofcode.com/2021/day/9)   |    [Python :x:](./Solutions/day9/py/main.py)    | [Rust :x:](./Solutions/day9/rust/src/main.rs)  |
+| [day 9](https://adventofcode.com/2021/day/9)   |    [Python :heavy_check_mark:](./Solutions/day9/py/main.py) `Time: 1.110470 sec`   | [Rust :x:](./Solutions/day9/rust/src/main.rs)  |
 | [day 10](https://adventofcode.com/2021/day/10) |    [Python :x:](./Solutions/day10/py/main.py)   | [Rust :x:](./Solutions/day10/rust/src/main.rs) |
 | [day 11](https://adventofcode.com/2021/day/11) |    [Python :x:](./Solutions/day11/py/main.py)   | [Rust :x:](./Solutions/day11/rust/src/main.rs) |
 | [day 12](https://adventofcode.com/2021/day/12) |    [Python :x:](./Solutions/day12/py/main.py)   | [Rust :x:](./Solutions/day12/rust/src/main.rs) |
