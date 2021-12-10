@@ -69,15 +69,14 @@ def part_a(lines: list[Line]):
 def part_b(lines: list[Line]):
     conuts = []
     for line in lines:
-        # que = line.que.copy()
         if line.fix_missing_closings():
             acc = 0
             for i in range(len(line.que)):
                 acc *= 5
                 acc += complete_score(pairs[line.que.pop()])
             conuts.append(acc)
-    # print(sorted(conuts))
     return sorted(conuts)[len(conuts) // 2]
+
 
 def main(file) -> tuple:
     with open(file) as f:
@@ -95,9 +94,3 @@ if __name__ == '__main__':
     print(f"Result part_a: {a}")
     print(f"Result part_b: {b}")
     print(f"Time: {(end_time - start_time):4f} sec")
-    if file_name == "../tinput.txt":
-        assert a == 26397
-        assert b == 288957
-    else:
-        assert a == 319329
-        assert b == 3515583998
