@@ -4,6 +4,7 @@ import subprocess
 
 DEFAULT_PATH: Path = Path("Solutions")
 DEFAULT_DAY_NAME: str = "day"
+EXAMPLE_INPUT_NAME: str = "tinput.txt"
 PY_DIR_NAME: str = "py"
 PY_FILE_NAME: str = "main.py"
 RUST_DIR_NAME: str = "rust"
@@ -91,6 +92,7 @@ def main():
 
     if new_day_path.exists() is False:
         new_day_path.mkdir()
+        (new_day_path/EXAMPLE_INPUT_NAME).touch()
 
     if create_py_file(new_day_path) is False:
         print("Creating python file went wrong. exiting")
