@@ -21,19 +21,26 @@ def create_py_file(path: Path) -> bool:
 def part_b():
     pass
 
-def main() -> tuple:
-    with open("../input.txt") as f:
+def main(file) -> tuple:
+    with open(file) as f:
         pass
     return part_a(), part_b()
 
 if __name__ == '__main__':
     import time
+    file_name = "../input.txt"
     start_time = time.perf_counter()
-    a, b = main()
+    a, b = main(file_name)
     end_time = time.perf_counter()
     print(f"Result part_a: {a}")
     print(f"Result part_b: {b}")
-    print(f"Time: {(end_time - start_time):4f} sec")""")
+    print(f"Time: {(end_time - start_time):4f} sec")
+    if file_name == "../tinput.txt":
+        assert a == None
+        assert b == None
+    else:
+        assert a == None
+        assert b == None""")
         return True
     return False
 
