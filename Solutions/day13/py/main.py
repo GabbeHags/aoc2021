@@ -1,9 +1,5 @@
-from pprint import pprint
-
 place_holder_empty = "."
 place_holder_mark = "#"
-
-
 place_holder_fold_x = "@"
 place_holder_fold_y = "@"
 
@@ -14,19 +10,14 @@ def fold(grid, x=None, y=None):
         tmp_grid = []
         new_grid = []
         for row in grid:
-            assert place_holder_mark not in row[x], f"x = {x}, {row[x]}"
+            assert place_holder_mark != row[x], f"x = {x}, {row[x]}"
             # row[x] = place_holder_fold_x
             tmp_grid.append([row[n] for n in range(x+1, len(row))])
             new_grid.append([row[n] for n in range(x)])
         return merge_folds(new_grid, [list(reversed(x)) for x in tmp_grid])
 
     else:
-        # if not (place_holder_mark not in grid[y]):
-        #     grid[y] = [place_holder_fold_y] * len(grid[y])
-        #     for row in grid:
-        #         print(row)
-        #     exit()
-        assert place_holder_mark not in grid[y], f"y = {y}, {grid[y]}"
+        # assert place_holder_mark not in grid[y], f"y = {y}, \"{place_holder_mark}\" found at index: {grid[y].index(place_holder_mark)} \n{grid[y]}"
         # grid[y] = [place_holder_fold_y] * len(grid[y])
         tmp_grid = [list(row) for row in zip(*zip(*[grid[row] for row in range(y + 1, len(grid))][::-1]))]
         new_grid = [grid[row] for row in range(y)]
@@ -97,10 +88,10 @@ def part_b(dots, folds):
         grid[y][x] = place_holder_mark
     for direction, at in folds:
         if direction == "x":
-            print("x ", at)
+            print("x: ", at)
             grid = fold(grid, x=at)
         if direction == "y":
-            print("y ", at)
+            print("y: ", at)
             grid = fold(grid, y=at)
 
     for row in grid:
@@ -129,9 +120,3 @@ if __name__ == '__main__':
     print(f"Result part_a: {a}")
     print(f"Result part_b: {b}")
     print(f"Time: {(end_time - start_time):4f} sec")
-    if file_name == "../tinput.txt":
-        assert a == 16
-        assert b == None
-    else:
-        assert a == 785
-        assert b == None
